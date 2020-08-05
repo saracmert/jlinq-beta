@@ -1,5 +1,7 @@
 # jLinq Next Generation
 
+[![npm version](https://badge.fury.io/js/jlinq-ng.svg)](https://badge.fury.io/js/jlinq-ng)
+
 jLinq is a 100% JavaScript library that allows you to perform complex queries on arrays of JSON data. Instead of using for loops and if statements, you can write fluent queries to filter, sort and select the information you need.
 
 Plus jLinq extensible so you can create your own functions and plug them straight into the library.
