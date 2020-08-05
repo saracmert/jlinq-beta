@@ -929,7 +929,7 @@ var jl;
                 });
             }},
             
-        //does this start with a value
+        //does this end with a value
         { name:"ends", type:framework.command.query, 
             method:function(value) {
                 return this.compare({
@@ -938,7 +938,7 @@ var jl;
                 });
             }},
             
-        //does this start with a value
+        //does this contain a value
         { name:"contains", type:framework.command.query, 
             method:function(value) {
                 return this.compare({
@@ -950,7 +950,7 @@ var jl;
                 });
             }},
             
-        //does this start with a value
+        //does this match a regular expression
         { name:"match", type:framework.command.query, 
             method:function(value) {
                 return this.compare({
@@ -971,13 +971,16 @@ var jl;
         //is the value greater than the argument
         { name:"greater", type:framework.command.query, 
             method:function(value) {
+				if (Object.prototype.toString.call(this.value) === "[object Date]") {
+					value = new Date(this.value);
+				}
                 return this.compare({
                     array:function() { return this.value.length > value; },
                     string:function() { return this.value.length > value; },
                     other:function() { return this.value > value; }
                 });
             }},
-            
+        
         //is the value greater than or equal to the argument
         { name:"greaterEquals", type:framework.command.query, 
             method:function(value) {
@@ -991,13 +994,16 @@ var jl;
         //is the value less than the argument
         { name:"less", type:framework.command.query, 
             method:function(value) {
+				if (Object.prototype.toString.call(this.value) === "[object Date]") {
+					value = new Date(this.value);
+				}
                 return this.compare({
                     array:function() { return this.value.length < value; },
                     string:function() { return this.value.length < value; },
                     other:function() { return this.value < value; }
                 });
             }},
-            
+        
         //is the value less than or equal to the argument
         { name:"lessEquals", type:framework.command.query, 
             method:function(value) {
