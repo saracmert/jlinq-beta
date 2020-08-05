@@ -1,5 +1,7 @@
 /*
- * jLinq - 3.0.1
+ * jlinq-node 3.0.2
+ * Mert Sarac - mertsarac.com
+ * based on:
  * Hugo Bonacci - hugoware.com
  * http://creativecommons.org/licenses/by/3.0/
  */
