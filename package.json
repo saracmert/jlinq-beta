@@ -4,14 +4,17 @@
   "description": "jLinq is a 100% JavaScript library that allows you to perform complex queries on arrays of JSON data. Instead of using for loops and if statements, you can write fluent queries to filter, sort and select the information you need.",
   "main": "src/jlinq.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saracmert/jlinq.js.git"
   },
-  "author": "Hugo Bonacci",
-  "license": "CC BY 4.0",
+  "keywords": [
+    "jlinq"
+  ],
+  "author": "Mert Sarac, Hugo Bonacci",
+  "license": "CC-BY-4.0",
   "bugs": {
     "url": "https://github.com/saracmert/jlinq.js/issues"
   },
