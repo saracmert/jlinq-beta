@@ -1,14 +1,12 @@
 /*
- * jlinq-node 3.0.2
+ * jlinq-node 3.0.3
  * Mert Sarac - mertsarac.com
  * based on:
  * Hugo Bonacci - hugoware.com
  * http://creativecommons.org/licenses/by/3.0/
  */
 
-var jLinq;
 var jlinq;
-var jl;
 (function() {
 
     //jLinq functionality
@@ -1233,7 +1231,7 @@ var jl;
         ]);
     
     //set the public object
-    jLinq = {
+    jlinq = {
     
         //determines if new queries should always be
         //cloned to prevent accidental changes to objects
@@ -1334,8 +1332,4 @@ var jl;
             
         }
     };
-    
-    //set the other aliases
-    jlinq = jLinq;
-    jl = jLinq;
 })();

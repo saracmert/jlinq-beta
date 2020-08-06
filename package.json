@@ -1,10 +1,10 @@
 {
   "name": "jlinq-ng",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "jLinq is a 100% JavaScript library that allows you to perform complex queries on arrays of JSON data. Instead of using for loops and if statements, you can write fluent queries to filter, sort and select the information you need.",
-  "main": "src/jlinq.js",
+  "main": "./src/jlinq.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "test": "node ./test/test.js"
   },
   "repository": {
     "type": "git",
